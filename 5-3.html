@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .selection {
+       width : 200px;
+    }
+    .input {
+      width : 10px;
+    }
+  </style>
+</head>
+<body>
+<h1>Market Research Survey</h1>
+<p>Please take a few moment to complete this satisfaction survey.</p>
+<form>
+<p>What is your age range?</p>
+  <select name="age" class="selection">
+    <option value="18-24">18-24</option>
+    <option value="25-34">25-34</option>
+    <option value="35-50">35-50</option>
+    <option value="50+">50+</option>
+   </select>
+<p>What is your yearly income range?</p>
+  <select name="income" class="selection">
+    <option value="$0-$25000">$0-$25000</option>
+    <option value="$25001-$50000">$25001-$50000</option>
+    <option value="$50001-$100000">$50001-$100000</option>
+    <option value="$100000+">$100000+</option>
+  </select>
+<p>Gender Identity</p>
+  <input type="radio" name="male"/>Male</br>
+  <input type="radio" name="female"/>Female</br>
+  <input type="radio" name="Nonbinary"/>Nonbinary</br>
+  <input type="radio" name="other"/>Other</br>
+  <input type="text"  name="other"/>
+<p>Which of the following products have you purchased in the last 2 months. Please check all that apply.</p>
+  <input type="checkbox" name="Product 1"/>Product 1</br>
+  <input type="checkbox" name="Product 2"/>Product 2</br>
+  <input type="checkbox" name="Product 3"/>Product 3</br>
+<p>How often would you use our new product?</p>
+  <input type="radio" name="Daily"/>Daily</br>
+  <input type="radio" name="Weekly"/>Weekly</br>
+  <input type="radio" name="Monthly"/>Monthly</br>
+<p>What would you pay for the new product?</p>
+<table border="0" cellpadding="2" cellspacing="5">
+  <tr>
+    <td>$</td>
+    <td><input type="text"  name="dollars"/></td>
+    <td>.</td>
+    <td><input type="text"  name="cents" class="input"/></td>
+  </tr>
+</table>
+<pre>   Dollars                    Cents</pre>
+</form>
+</body>
+</html>
